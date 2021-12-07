@@ -49,9 +49,7 @@ int main() {
 
 int Partition(int* A, int p, int r){
     int pivot = A[r];
-    //indice i di terminazione elementi <= pivot
     int i = p-1;
-    //indice j = elemento da confrontare
 
     int j;
 
@@ -62,7 +60,7 @@ int Partition(int* A, int p, int r){
         }
     }
 
-    swap(A,i+1,r); //scambio il pivot con il primo elemento più grande
+    swap(A,i+1,r);
     return i+1;
 }
 
